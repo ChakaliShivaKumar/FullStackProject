@@ -1,0 +1,203 @@
+.container main.checkout {
+  border: solid 1px rgb(77, 15, 44);
+  background-color: rgb(77, 15, 44);
+  display: flex;
+  flex-direction: column;
+}
+.container main.checkout .forms {
+  padding: 10%;
+}
+.container main.checkout .forms .form-title {
+  font: 400 32px "Khand", sans-serif;
+  color: rgb(198, 159, 118);
+  margin-left: 5%;
+}
+.container main.checkout .forms .accordion {
+  font: 400 12px "Inter", sans-serif;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 80%;
+  text-align: start;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  border-radius: 50px;
+  margin-bottom: 5%;
+}
+.container main.checkout .forms .accordion .accordion-input {
+  display: none;
+}
+.container main.checkout .forms .accordion .accordion-label {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font: 400 18px "Inter", sans-serif;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.125em;
+  padding: 0.25em 1em;
+  z-index: 20;
+}
+.container main.checkout .forms .accordion .accordion-label:hover {
+  background: #ccc;
+}
+.container main.checkout .forms .accordion input.accordion-input:checked + label.accordion-label {
+  background: rgba(255, 255, 255, 0.9);
+  text-shadow: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  color: rgb(198, 159, 118);
+  margin-bottom: 0;
+}
+.container main.checkout .forms .accordion article {
+  background: rgba(198, 159, 118, 0.7);
+  height: 0px;
+  overflow: hidden;
+  z-index: 10;
+}
+.container main.checkout .forms .accordion article .labels {
+  font: 400 16px "Inter", sans-serif;
+  color: #FFFFFF;
+  margin-right: 5%;
+}
+.container main.checkout .forms .accordion article .error-field {
+  display: none;
+  font: 400 12px "Inter", sans-serif;
+  width: 40%;
+  margin-left: 20%;
+  justify-self: center;
+  color: coral;
+  text-shadow: 2px 2px 4px #000000;
+  border-radius: 40px;
+}
+.container main.checkout .forms .accordion article .label-inputs {
+  padding: 2% 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container main.checkout .forms .accordion article .label-inputs .input-field2 {
+  width: 40%;
+}
+.container main.checkout .forms .accordion input.accordion-input:checked ~ article {
+  height: auto;
+  margin-bottom: 10px;
+  padding: 5%;
+}
+.container main.checkout .forms .continue-btn {
+  width: 80%;
+  background: none;
+  border-radius: 50px;
+  margin: 4% 0;
+  border: solid 2px rgb(198, 159, 118);
+  padding: 2%;
+  color: rgb(198, 159, 118);
+}
+.container main.checkout .division2 {
+  padding: 5%;
+}
+.container main.checkout .division2 .timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font: 400 32px "Khand", sans-serif;
+  color: rgb(198, 159, 118);
+  padding-bottom: 5%;
+}
+.container main.checkout .division2 .ticket-details {
+  border: solid 2px rgb(198, 159, 118);
+  height: auto;
+  margin-bottom: 10%;
+  padding: 1%;
+}
+.container main.checkout .division2 .ticket-details .ticket-details-title {
+  font: 500 18px "Khand", sans-serif;
+  color: rgb(198, 159, 118);
+  padding: 3%;
+  border-bottom: solid 2px rgba(74, 225, 233, 0.5);
+}
+.container main.checkout .division2 .ticket-details .ticket-details-description {
+  font: 400 16px "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 2%;
+  border-bottom: solid 2px rgba(74, 225, 233, 0.5);
+}
+.container main.checkout .division2 .ticket-details .ticket-details-description .ticket-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container main.checkout .division2 .ticket-details .ticket-details-description .ticket-total .total-title {
+  font: 400 16px "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+.container main.checkout .division2 .ticket-details .ticket-total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container main.checkout .division2 .ticket-details .ticket-total .total-title {
+  font: 400 16px "Inter", sans-serif;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .container .ticket-home .home-icon {
+    display: none;
+  }
+  .container .ticket-home .ticket-nav {
+    position: unset;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: none;
+    font: 400 14px "Inter", serif;
+    box-sizing: border-box;
+    padding-right: 15%;
+  }
+  .container .ticket-home .ticket-nav .fa-xmark {
+    display: none;
+  }
+  .container .ticket-home .ticket-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 70%;
+  }
+  .container .ticket-home .ticket-nav ul li {
+    margin: 0 25%;
+    padding: 5%;
+  }
+  .container main.checkout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .container main.checkout .forms {
+    width: 55%;
+  }
+  .container main.checkout .forms .form-title {
+    font: 400 60px "Khand", sans-serif;
+    color: rgb(198, 159, 118);
+  }
+  .container main.checkout .forms .accordion {
+    margin-left: 10%;
+  }
+  .container main.checkout .division2 {
+    width: 45%;
+  }
+  .container main.checkout .division2 .ticket-details {
+    padding: 3%;
+    height: fit-content;
+  }
+  .container main.checkout .division2 .ticket-details .ticket-details-title {
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=ticketCheckout.css.map */

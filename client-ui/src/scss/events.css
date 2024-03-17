@@ -1,0 +1,222 @@
+.container header#home {
+  padding: 30px;
+  width: 100%;
+  height: auto;
+  background: #D6C957;
+  position: relative;
+  box-sizing: border-box;
+}
+.container header#home .icon {
+  float: left;
+}
+.container header#home nav label {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.container header#home nav ul {
+  background-color: #D6C957;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  margin: 0;
+  padding: 10%;
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  list-style-type: none;
+  font: 400 32px "Inter", serif;
+  transition: left 300ms ease-in;
+}
+.container header#home nav ul li {
+  margin: 20px 0;
+}
+.container header#home nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 10px;
+}
+.container header#home #iconsym:checked ~ nav > ul {
+  left: 0;
+}
+.container header#home .search-container {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+.container header#home .search-container input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.container header#home .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.container .event-type-container {
+  margin: 0;
+  padding: 2%;
+  background-color: rgb(77, 15, 44);
+}
+.container .event-type-container .go-to {
+  text-align: center;
+  max-width: 100%;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font: 400 14px "Inter", serif;
+}
+.container .event-type-container .event-types {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin: 2% 0;
+  box-sizing: border-box;
+}
+.container .event-type-container .event-types .event {
+  width: auto;
+  background-color: #D6C957;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  padding: 5%;
+  text-align: center;
+  cursor: pointer;
+}
+.container .event-type-container .event-types .event a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font: 400 18px "Inter", serif;
+}
+.container .slideshow-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.container .slideshow-container #slideshow {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 400px;
+}
+.container .slideshow-container #slideshow .slide-wrapper {
+  animation: slide 5s ease infinite;
+  width: 1600px;
+}
+.container .slideshow-container #slideshow .slide {
+  float: left;
+  border-radius: 30px;
+}
+.container .event-container-header {
+  background-color: #D6C957;
+  max-width: 100%;
+  position: relative;
+  padding: 0.5%;
+}
+.container .event-container-header .view-link {
+  position: absolute;
+  top: 30%;
+  right: 2%;
+}
+.container .card {
+  padding: 2%;
+}
+.container .card .card-body {
+  margin: 2%;
+  text-align: center;
+}
+.container .card .card-body .card-title {
+  font-size: 16px;
+}
+.container .card .card-body .location, .container .card .card-body .time, .container .card .card-body .price {
+  font-size: 16px;
+}
+@keyframes slide {
+  25% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: -400px;
+  }
+  75% {
+    margin-left: -800px;
+  }
+  100% {
+    margin-left: -1200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container #iconsym {
+    display: none;
+  }
+  .container .icon {
+    display: none;
+  }
+  .container header#home {
+    padding: 0;
+    margin: 0;
+  }
+  .container header#home .icon {
+    opacity: 0;
+  }
+  .container header#home nav {
+    opacity: 1;
+    position: unset;
+  }
+  .container header#home nav ul {
+    position: unset;
+    height: auto;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: start;
+    list-style-type: none;
+    font: 400 14px "Inter", serif;
+    border-radius: 20px;
+  }
+  .container header#home nav ul .fa-xmark {
+    display: none;
+  }
+  .container header#home nav ul a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 10px;
+  }
+  .container .event-type-container .go-to {
+    font-size: 24px;
+  }
+  .container .event-class {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .container .card {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .container .card .card-body {
+    width: 200px;
+    max-height: 150px;
+  }
+  .container .card .card-image .card-img {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+/*# sourceMappingURL=events.css.map */

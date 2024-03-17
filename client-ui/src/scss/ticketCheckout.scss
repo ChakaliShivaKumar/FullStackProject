@@ -1,0 +1,248 @@
+.container{
+    main.checkout{
+        border: solid 1px rgba(77, 15, 44, 1);
+        background-color: rgba(77, 15, 44, 1);
+        display: flex;
+        flex-direction: column;
+
+        .forms{
+            padding: 10%;
+
+
+            .form-title{
+                font : 400 32px 'Khand',sans-serif;
+                color: rgba(198, 159, 118, 1);
+                margin-left: 5%;
+            }
+
+            .accordion {
+                font : 400 12px 'Inter',sans-serif;
+                color: #444;
+                cursor: pointer;
+                padding: 10px;
+                width: 80%;
+                text-align: start;
+                border: none;
+                outline: none;
+                transition: 0.4s;
+                border-radius: 50px;
+                margin-bottom: 5%;
+
+                .accordion-input {
+                    display: none;
+                }
+
+                .accordion-label {
+                    color: white;
+                    text-shadow: 2px 2px 4px #000000;
+                    font : 400 18px 'Inter',sans-serif;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: .125em;
+                    padding: .25em 1em;
+                    z-index: 20;
+                }
+
+                .accordion-label:hover {
+                    background: #ccc;
+                }
+                
+                input.accordion-input:checked + label.accordion-label {
+                    background: rgb(255,255,255,0.9);
+                    text-shadow: none;
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                    color: rgba(198, 159, 118, 1);
+                    margin-bottom: 0;
+                }
+
+                article {
+                    background: rgba(198, 159, 118, 0.7);;
+                    height:0px;
+                    overflow:hidden;
+                    z-index:10;
+
+                    .labels{
+                        font : 400 16px 'Inter',sans-serif;
+                        color: #FFFFFF;
+                        margin-right: 5%;
+                    }
+
+                    .error-field{
+                        display: none;
+                        font : 400 12px 'Inter',sans-serif;
+                        width: 40%;
+                        margin-left: 20%;
+                        justify-self: center;
+                        color: coral;
+                        text-shadow: 2px 2px 4px #000000;
+                        border-radius: 40px;
+                    }
+
+                    .label-inputs{
+                        padding: 2% 20%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        .input-field2{
+                            width: 40%;
+                        }
+                    }
+                }
+
+                input.accordion-input:checked ~ article {
+                    height: auto;
+                    margin-bottom: 10px;
+                    padding: 5%;
+                }
+
+            }
+
+            .continue-btn{
+                width: 80%;
+                background: none;
+                border-radius: 50px;
+                margin: 4% 0;
+                border: solid 2px rgba(198, 159, 118, 1);
+                padding: 2%;
+                color: rgba(198, 159, 118, 1);
+            }
+
+        }
+
+        .division2{
+            padding: 5%;
+
+            .timer{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font : 400 32px 'Khand',sans-serif;
+                color: rgba(198, 159, 118, 1);
+                padding-bottom: 5%;
+              }
+
+            .ticket-details{
+                border: solid 2px rgba(198, 159, 118, 1);
+                height: auto;
+                margin-bottom: 10%;
+                padding: 1%;
+    
+                .ticket-details-title{
+                    font: 500 18px 'Khand',sans-serif;
+                    color: rgba(198, 159, 118, 1);
+                    padding: 3%;
+                    border-bottom: solid 2px rgba(74, 225, 233, 0.5);
+                }
+                
+                .ticket-details-description{
+                    font : 400 16px 'Inter',sans-serif;
+                    color: rgba(255, 255, 255, 0.5);
+                    padding: 2%;
+                    border-bottom: solid 2px rgba(74, 225, 233, 0.5);
+    
+                    .ticket-total{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+        
+                        .total-title{
+                            font : 400 16px 'Inter',sans-serif;
+                            color: rgba(255, 255, 255, 0.5);
+                        }
+                    }
+                }
+    
+                .ticket-total{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+    
+                    .total-title{
+                        font : 400 16px 'Inter',sans-serif;
+                        color: rgba(255, 255, 255, 0.5);
+                    }
+                }
+            
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width:768px) {
+    .container{
+        .ticket-home{
+            .home-icon{
+                display: none;
+            }
+
+            .ticket-nav{
+                position: unset;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background: none;
+                font: 400 14px 'Inter', serif;
+                box-sizing: border-box;
+                padding-right: 15%;
+
+                .fa-xmark{
+                    display: none;
+                }
+
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin-left: 70%;
+
+                    li{
+                        margin: 0 25%;
+                        padding: 5%;
+                    }
+                    
+                }
+
+            }
+        }
+
+        main.checkout{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .forms{
+                width: 55%;
+
+                .form-title{
+                    font : 400 60px 'Khand',sans-serif;
+                    color: rgba(198, 159, 118, 1);
+                }
+
+                .accordion{
+                    margin-left: 10%;
+                }
+            
+            }
+
+            .division2{
+                width: 45%;
+                .ticket-details{
+                    padding: 3%;
+                    height: fit-content;
+                    .ticket-details-title{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

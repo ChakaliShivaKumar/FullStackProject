@@ -1,0 +1,142 @@
+.container .thankyou-note {
+  margin: 5%;
+  padding: 3%;
+  box-shadow: 1px 1px 5px 5px rgb(211, 211, 211);
+  font: 400 13px "Inter", serif;
+}
+.container .ticket-final-details {
+  margin: 2% 5%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 5px 5px rgb(211, 211, 211);
+}
+.container .ticket-final-details .division1 {
+  width: 55%;
+  margin: 5% 20%;
+  text-align: center;
+}
+.container .ticket-final-details .division1 .booking-id {
+  margin-top: 5%;
+}
+.container .ticket-final-details .division1 .print-ticket {
+  outline: 0;
+  border: 0;
+  margin-top: 5%;
+  cursor: pointer;
+  color: #fff;
+  font: 700 13px "Inter", serif;
+  height: 38px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background-image: linear-gradient(180deg, #7c8aff, #3c4fe0);
+}
+.container .ticket-final-details .division2 {
+  margin-left: 10%;
+  width: 70%;
+}
+.container .ticket-final-details .division2 .ticket-details {
+  margin-right: 10%;
+  border: solid 2px;
+  margin-bottom: 10%;
+}
+.container .ticket-final-details .division2 .ticket-details .ticket-details-title {
+  font: 500 16px "Khand", sans-serif;
+  padding: 3%;
+  border-bottom: solid 2px;
+}
+.container .ticket-final-details .division2 .ticket-details .ticket-details-description {
+  font: 400 14px "Inter", sans-serif;
+  padding: 2%;
+  border-bottom: solid 2px;
+}
+.container .ticket-final-details .division2 .ticket-details .ticket-details-description .ticket-total {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .ticket-final-details .division2 .ticket-details .ticket-total {
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container .ticket-final-details .division2 .ticket-details .ticket-total .total-title {
+  font: 400 14px "Inter", sans-serif;
+}
+.container .feedback {
+  margin: 2% 5%;
+  padding: 3%;
+  box-shadow: 1px 1px 5px 5px rgb(211, 211, 211);
+}
+.container .feedback .check-mark {
+  color: #3bc814;
+}
+.container .feedback input, .container .feedback input:focus {
+  background-color: inherit;
+  width: 100%;
+  font: 700 16px "Inter", serif;
+  min-height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 1%;
+  box-shadow: 0 0 2px 2px #616467;
+  margin-bottom: 2%;
+}
+.container .feedback .feedback-btn {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font: 700 13px "Inter", serif;
+  height: 38px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background-image: linear-gradient(180deg, #7c8aff, #3c4fe0);
+}
+.container .feedback .feedback-btn:hover {
+  color: #fff;
+  background-color: #616467;
+}
+.container .instructions {
+  margin: 2% 5%;
+  text-align: start;
+  padding: 3%;
+  font: 400 13px "Inter", serif;
+  box-shadow: 1px 1px 5px 5px rgb(211, 211, 211);
+}
+.container .instructions h3 {
+  text-align: center;
+}
+.container .continue-link {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .container .ticket-final-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .container .ticket-final-details .division1 {
+    width: 40%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+  }
+  .container .ticket-final-details .division2 {
+    width: 55%;
+  }
+  .container .feedback .check-mark {
+    color: #3bc814;
+  }
+  .container .feedback .feedback-btn {
+    font-size: 14px;
+    padding: 1%;
+  }
+}
+
+/*# sourceMappingURL=confirmation.css.map */
